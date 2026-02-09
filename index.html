@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div class="wrapper">
+        <div class="settings">
+            <div class="deposit">
+                <label class="deposit" for="deposit">$ Deposit</label>
+                <input type="text" name="deposit" id="deposit_value" inputmode="numeric" pattern="[0-9]*">
+            </div>
+            <div class="margin">
+                <label class="margin" for="margin">$ Margin</label>
+                <input type="text" name="margin" id="margin_value" inputmode="numeric" pattern="[0-9]*">
+            </div>
+            <div class="leverage">
+                <label class="leverage" for="leverage">x Leverage</label>
+                <input type="text" name="leverage" id="leverage_value" inputmode="numeric" pattern="[0-9]*">
+            </div>
+            <div class="fee">
+                <label class="fee" for="fee">% Fee</label>
+                <input type="text" name="fee" id="fee_value" inputmode="numeric" pattern="[0-9]*">
+            </div>
+        </div>
+        <div class="entry_price">
+            <label class="entry_price_name" for="entry_price">$ Entry price</label>
+            <input type="text" name="entry_price" id="entry_price_value" inputmode="numeric" pattern="[0-9]*">
+        </div>
+        <div class="results">
+            <div class="position">
+                <div class="position_radio_buttons">
+                    <div class="position_radio button long">
+                        <label class="position_radio_button_long_label" for="position_radio_button_long">LONG</label>
+                        <input type="radio" name="position_radio_button_long" id="position_radio_button_long" checked>
+                    </div>
+                    <div class="position_radio button short">
+                        <label class="position_radio_button_short_label" for="position_radio_button_short">SHORT</label>
+                        <input type="radio" name="position_radio_button_short" id="position_radio_button_short">
+                    </div>
+                </div>
+            </div>
+            <div class="sltp_percents">
+                <div class="sl_percent">
+                    <label class="sl" for="sl">% SL</label>
+                    <input type="text" name="sl" id="sl" inputmode="numeric" pattern="[0-9]*">
+                </div>
+                <div class="tp_percent">
+                    <label class="tp" for="tp">% TP</label>
+                    <input type="text" name="tp" id="tp" inputmode="numeric" pattern="[0-9]*">
+                </div>
+            </div>
+            <div class="summary">
+                <div class="sltp_prices">
+                    <div class="sl_price">
+                        <p class="sl_price name">$ SL Price</p>
+                        <div class="sl_price value" id="sl_price_value"></div>
+                    </div>
+                    <div class="tp_price">
+                        <p class="tp_price name">$ TP Price</p>
+                        <div class="tp_price value" id="tp_price_value"></div>
+                    </div>
+                </div>
+                <div class="sltp_profits">
+                    <div class="sl_profit">
+                        <p class="sl_profit name">$ SL Profit</p>
+                        <div class="sl_profit value" id="sl_profit_value"></div>
+                    </div>
+                    <div class="tp_profit">
+                        <p class="tp_profit name">$ TP profit</p>
+                        <div class="tp_profit value" id="tp_profit_value"></div>
+                    </div>
+                </div>
+                <div class="resulted_deposits">
+                    <div class="resulted_deposit_sl">
+                        <p class="resulted_deposit_sl name">$ Deposit - SL</p>
+                        <div class="resulted_deposit_sl value" id="resulted_deposit_sl_value"></div>
+                    </div>
+                    <div class="resulted_deposit_tp">
+                        <p class="resulted_deposit_tp name">$ Deposit + TP</p>
+                        <div class="resulted_deposit_tp value" id="resulted_deposit_tp_value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/script.js"></script>
+</html>

@@ -1,0 +1,129 @@
+@import url(/assets/css/normalize.css);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+div {
+    display: flex;
+}
+
+label {
+    caret-color: transparent;
+}
+
+input {
+    margin-top: 7px;
+    max-width: 100px;
+    max-height: 20px;
+    border-style: hidden;
+    text-align: center;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+}
+
+input:focus {
+    outline: none;
+}
+
+.wrapper {
+    padding: 50px;
+    max-width:fit-content;
+    background-color: rgba(237, 241, 219, 0.589);
+    box-shadow: 0px 0px 10px 10px rgba(1, 1, 72, 0.066);
+    gap: 2em;
+    border-radius: 8px;
+}
+
+.settings {
+    flex-direction: column;
+}
+
+.settings > * {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry_price {
+    padding: 10px;
+    flex-direction: column;
+}
+
+.entry_price > * {
+    align-items: center;
+    text-align: center;
+}
+
+.results {
+    padding: 10px;
+    flex-direction: column;
+}
+
+.position {
+    justify-content: center;
+}
+
+.position_radio_buttons {
+    caret-color: transparent;
+    flex-basis:100%;
+    justify-content: center;
+    gap: 7.4em;
+}
+
+.position_radio.button {
+    flex-direction: column;
+}
+
+.position_radio.button {
+    accent-color: "green";
+}
+
+.sltp_percents {
+    gap: 2.5em;
+}
+
+.sltp_percents > * {
+    margin-top: 1.2em;
+    flex-basis:100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sltp_percents input {
+    max-width: 50px;
+}
+
+.summary {
+    margin-top: 1em;
+    caret-color: transparent;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary > * {
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.summary > div > div {
+    flex-direction: column;
+    width: 120px;
+}
+
+.summary > div > div > div {
+    margin-top: -0.5em;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.434);
+    justify-content: center;
+}
